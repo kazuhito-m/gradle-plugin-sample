@@ -1,0 +1,19 @@
+group 'github.com.kazuhito_m'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    testCompile 'junit:junit:4.12'
+}
+
+jar.baseName = 'gradle-plugin-sample'
+
