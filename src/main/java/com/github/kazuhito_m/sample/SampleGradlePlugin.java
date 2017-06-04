@@ -23,7 +23,7 @@ public class SampleGradlePlugin implements Plugin<Project> {
 
                 SampleGradlePluginConfiguration configuration = project.getExtensions().getByType(SampleGradlePluginConfiguration.class);
 
-                System.out.println("受け取ったパラメータ : " + configuration.getPropertyValue());
+                System.out.println("受け取ったパラメータ : " + configuration.propertyValue);
 
                 return "何を返したらなっとくなんだ。";
             }
